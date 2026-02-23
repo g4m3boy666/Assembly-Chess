@@ -7,7 +7,10 @@ il peut y avoir des erreurs dans mon code et dans mes commentaires
 
 je n'ai pas fais les règles comme la prise en passant ou le roque
 
-pour l'executer il faudra utiliser le compilateur nasm et utiliser les commandes suivante
+pour l'executer il faudra utiliser le compilateur "nasm" et utiliser les commandes suivante
+
 nasm -f elf64 chess.asm -o chess.o
+
 ld chess.o -o chess
+
 ./chess
