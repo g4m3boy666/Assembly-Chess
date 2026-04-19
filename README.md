@@ -1,18 +1,77 @@
-Chess ASM
+# Chess ASM
 
-Il s'agit d'un projet personnel pour me former a l'assembleur x86 64 j'utilise un registre sur 8 bits pour stocker les pièces
-et un registre sur 16 bits pour stocker les coordonnées donc je prefere utiliser un affichage cli et non un affichage graphique car il est plus simple a mettre en place
-et il permet de se concentrer sur la logique du jeu je ne compte pas utiliser de bibliothèque externe pour l'affichagec car cela reviendrai a refaire la logique de mon code
-ce qui n'est pas l'objectif 
+## Description
 
-il peut y avoir des erreurs dans mon code et dans mes commentaires
+**Chess ASM** est un projet personnel réalisé en **assembleur x86-64** dans le but de mieux comprendre le fonctionnement bas niveau d’un programme.
 
-je n'ai pas fais les règles comme la prise en passant ou le roque
+Ce projet consiste à implémenter une version simplifiée du jeu d’échecs avec un affichage en **ligne de commande (CLI)**. Le choix du CLI permet de se concentrer sur la logique du jeu et la manipulation directe des registres, sans complexité liée à une interface graphique.
 
-pour l'executer il faudra utiliser le compilateur "nasm" et utiliser les commandes suivante
+## Objectifs du projet
+
+- Apprendre et pratiquer l’assembleur x86-64
+- Manipuler directement les registres
+- Implémenter une logique de jeu sans abstraction
+- Comprendre la gestion mémoire bas niveau
+- Développer une approche algorithmique en environnement contraint
+
+## Choix techniques
+
+- Utilisation d’un **registre 8 bits** pour stocker les pièces
+- Utilisation d’un **registre 16 bits** pour stocker les coordonnées
+- Affichage en **CLI** (console)
+- Aucune utilisation de bibliothèque externe
+
+L’objectif principal est de travailler sur la **logique interne du jeu**, et non sur l’interface utilisateur.
+
+## Fonctionnalités
+
+- Affichage du plateau en console
+- Déplacement des pièces (logique de base)
+- Gestion simplifiée du jeu
+
+## Limitations
+
+Certaines règles officielles des échecs ne sont pas implémentées :
+
+- ❌ Roque
+- ❌ Prise en passant
+
+Le projet reste volontairement simplifié pour faciliter l’apprentissage.
+
+## Prérequis
+
+Ce projet nécessite **NASM (Netwide Assembler)**.
+
+### Installation de NASM
+
+#### Debian / Ubuntu
+```bash
+sudo apt install nasm
+```
+
+#### Arch Linux
+
+```bash
+sudo pacman -S nasm
+```
+
+#### Fedora
+
+```bash
+sudo dnf install nasm
+```
+
+#### openSUSE
+```bash
+sudo zypper install nasm
+```
+#### Compilation est éxecution
 
 nasm -f elf64 chess.asm -o chess.o
-
 ld chess.o -o chess
 
 ./chess
+
+## Auteur
+
+**Neo (moi)**
