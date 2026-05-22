@@ -1,5 +1,7 @@
 # Chess ASM
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/CeciEstUnBonPseudo/Assembly-Chess)
+
 ## Description
 
 **Chess ASM** est un projet personnel réalisé en **assembleur x86-64** dans le but de mieux comprendre le fonctionnement bas niveau d’un programme.
