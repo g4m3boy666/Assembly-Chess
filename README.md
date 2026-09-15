@@ -69,8 +69,7 @@ sudo zypper install nasm
 ```
 #### Compilation est éxecution
 
-nasm -f elf64 chess.asm -o chess.o
-ld chess.o -o chess
+nasm -f elf64 chess.asm -o chess.o && ld chess.o -o chess
 
 ./chess
 
